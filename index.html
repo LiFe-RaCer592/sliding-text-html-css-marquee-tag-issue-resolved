@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marquee Tag Sliding Text</title>
+    <style>
+        /*Marquee*/
+        #marquee {
+        height: 25px;
+        overflow: hidden;
+        background-color: #000;
+            align-items: center;
+            display: flex;
+        }
+
+        #marquee p {
+        width: 38em;
+        margin: 0;
+        font-size: 12px;
+        white-space: nowrap;
+        animation: marquee 15s linear infinite;
+        color:#fff;
+        }
+        @keyframes marquee {
+        0% {margin-left: 100%;}
+        100% {margin-left: -38em;}
+        }
+    </style>
+</head>
+<body>
+    <div class="up-bar-custom">
+        <div id="marquee">
+          <p>Order before 12:00 Sunday-Thursday for next day shipping!</p>
+        </div>
+      </div>
+</body>
+</html>
